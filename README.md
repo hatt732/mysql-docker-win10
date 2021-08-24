@@ -23,6 +23,23 @@ docker-compose version 1.29.1, build c34c88b2
 OK!
 ```
 
+#### **Run MySQL**
+```
+git clone https://github.com/hatt732/mysql-docker-win10.git
+cd mysql-docker-win10
+docker-compose up -d
+```
+#### **Connecting with MySQL Workbench**
+
+```
+    DB_HOST=mysql
+    DB_PORT=13306
+    DB_DATABASE=appdb
+    DB_USERNAME=user
+    DB_PASSWORD=userpassword
+    MYSQL_ROOT_PASSWORD=root
+```
+
 #### **Directory Structure**
 ```
 +-- mysql5.7 <project root>
@@ -39,5 +56,5 @@ The following values should be replaced in your `.env` file if you're willing to
     DB_DATABASE=appdb
     DB_USERNAME=user
     DB_PASSWORD=userpassword
-	MYSQL_ROOT_PASSWORD=root
+    MYSQL_ROOT_PASSWORD=root
     
