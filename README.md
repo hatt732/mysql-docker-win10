@@ -22,11 +22,21 @@ C:\Users\Administrator>docker-compose -v
 docker-compose version 1.29.1, build c34c88b2
 OK!
 ```
+#### **Download & install GIT**
+https://git-scm.com/download/win
+-> 64-bit Git for Windows Setup
 
-#### **Run MySQL**
+Create new folder
+Right Click
+Run Git Bash Here
+Run commands
 ```
 git clone https://github.com/hatt732/mysql-docker-win10.git
 cd mysql-docker-win10
+```
+
+#### **Run MySQL**
+```
 docker-compose up -d
 ```
 #### **Connecting with MySQL Workbench**
